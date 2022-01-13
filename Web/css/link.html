@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接</title>
+    <style>
+        a.a1:visited {
+            color: blue
+        }
+
+        a.a2:hover {
+            color: green
+        }
+
+        a.a3:active {
+            color: yellow
+        }
+
+        a.a4:hover {
+            background-color: lightblue
+        }
+
+        a.a5:link {/* 正常情况的状态 */
+            padding: 10px 30px;
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            background-color: lightgreen;
+            display: inline-block;/*融合行内与块级（既不会独占一行，也不会变为行内元素）*/
+        }
+
+        a.a5:hover {/*悬停时的状态*/
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+<a class="a1" href="">访问过的链接</a>
+<a class="a2" href="">悬停在链接上时</a>
+<a class="a3" href="">链接被点击时</a>
+<a class="a4" href="">链接悬停背景色</a>
+<a class="a5" href="">方框链接</a>
+</body>
+</html>
