@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tag_test</title>
+</head>
+<body>
+<form action="./tag_test.html" method="get">
+    <p>
+        <a name="top"></a>
+        名称：<input type="text" name="username" placeholder="请输入用户名" required>
+        <br>
+        <select name="国家">
+            <option value="china">中国</option>
+            <option value="us" selected>美国</option>
+            <option value="en">英国</option>
+        </select>
+        <br>
+        <input type="file" name="file">
+        <input type="button" name="upload" value="上传">
+    </p>
+
+    <p>
+        邮箱：
+        <input type="email" name="email">
+    </p>
+
+    <p>
+        URL:
+        <input type="url" name="url" value="只读" readonly>
+    </p>
+
+    <p>
+        颜色：
+        <input type="color" name="color">
+    </p>
+
+    <p>
+        时间：
+        <input type="time" name="time" value="01:00:00">
+    </p>
+
+    <p>
+        datetime：
+        <input type="datetime-local" name="datetime" hidden>
+    </p>
+
+    <p>
+        搜索：
+        <input type="search" name="search">
+    </p>
+
+    <p>
+        范围：
+        <input type="range" name="range" max="255" aria-orientation="vertical">
+    </p>
+
+    <p>
+        <input type="number" name="num" max="999" min="0" step="10">
+    </p>
+
+    <p>加强鼠标可用性，自动聚焦到指定框内<br>
+        <label for="input">点这验证</label>
+        <input type="text" id="input">
+    </p>
+    <p>pattern练习：
+        <input type="text" name="div_email" pattern="/[0-9]{1}/">
+    </p>
+    <br>
+    <input type="image" src="../resource/img/dog.png">
+    <p>
+        <a href="#top">返回顶层</a>
+    </p>
+    <p>
+        <input type="submit" name="submit">
+    </p>
+</form>
+</body>
+</html>
