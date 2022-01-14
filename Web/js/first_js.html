@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First JS</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 30px;
+            border: 3px solid deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()" >
+    点击显示时间
+</button>
+<p id="demo"></p> <br>
+<p id="demo2"></p>
+<button type="button" onclick="document.getElementById('demo2').innerHTML = 'abc'">
+点击试试
+</button>
+<br>
+<p id="box" class="box"></p>
+<button type="button" onclick="document.getElementById('box').style.backgroundColor='yellow'">
+    开灯
+</button>
+<button type="button" onclick="document.getElementById('box').style.backgroundColor='white'">
+    关灯
+</button>
+<button type="button" onclick="document.getElementById('box').style.display='none'">
+    隐藏
+</button>
+<button type="button" onclick="document.getElementById('box').style.display='block'">
+    还原
+</button>
+</body>
+</html>
