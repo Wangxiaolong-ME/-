@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Color</title>
+    <style>
+        ol {
+            background-color: lightblue;
+            margin: 20px;
+            padding: 50px;
+            width: 400px;
+            border: 7px dotted palevioletred;
+        }
+        ul {
+            background-color: lightgreen;
+            margin: 20px;
+            padding: 50px;
+            width: 400px;
+            border: 7px ridge pink;
+        }
+        ol li {
+            border-left: 5px solid lightgoldenrodyellow;
+            padding: 10px;
+            color: #fff;
+            background-color: deepskyblue;
+
+        }
+        ul li {
+            padding: 10px;
+            color: black;
+            background-color: darkolivegreen;
+        }
+        li.inside {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+<ol>
+    <li>ol</li>
+    <li>ol</li>
+    <li class="inside">ol 指定了inside属性</li>
+</ol>
+<ul>
+    <li>ul</li>
+    <li>ul</li>
+    <li>ul</li>
+</ul>
+</body>
+</html>

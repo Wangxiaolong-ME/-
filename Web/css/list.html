@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <style>
+        ol.a {
+            list-style-type: lower-roman;
+            list-style-position: outside;
+        }
+        ol.b {
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+        }
+        ul.c {
+            list-style-type: circle;
+        }
+        ul.d {
+            list-style-type: disc;
+        }
+        ul.img {
+            list-style-image: url("../resource/img/list_tag.png");
+        }
+        ul.none {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+有序表
+<ol class="a">
+    <li>aaa</li>
+    <li>bbb</li>
+    <li>ccc</li>
+</ol>
+<ol class="b">
+    <li>aaa</li>
+    <li>bbb</li>
+    <li>ccc</li>
+</ol>
+无序表
+<ul class="c">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<ul class="d">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+图片列表标记
+<ul class="img">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+删除列表默认设置 list-style-type,margin,padding
+<ul class="none">
+    <li>aaa</li>
+    <li>bbb</li>
+    <li>ccc</li>
+</ul>
+</body>
+</html>
