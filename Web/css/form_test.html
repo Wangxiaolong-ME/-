@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单美化练习</title>
+  <style>
+    .container {
+        max-width: 400px;
+        margin: 10px;
+    }
+    label {
+        font-family: 隶书,serif;
+        font-size: 20px;
+    }
+    input,select,textarea {
+        width: 180px;
+        display: block;
+        margin: 10px 0;
+        padding: 3px 0;
+        border-right: 2px solid pink;
+    }
+    input:required:hover {
+        outline: 2px double deepskyblue;
+    }
+
+    select:hover {
+        outline: 2px solid lightblue;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+    <form action="">
+        <label for="username">用户名
+        <input type="text" id="username" required placeholder="输入用户名">
+    </label>
+        <label>密码
+        <input type="password" name="password" required>
+    </label>
+        <label for="">请选择</label><select name="area" id="" required>
+        <option value="us">美国</option>
+        <option value="cn">中国</option>
+        <option value="id">印度</option>
+        <option value="en">英国</option>
+    </select>
+        <label for="">备注
+        <textarea name="message" id="message" cols="60" rows="5"></textarea>
+        </label>
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
