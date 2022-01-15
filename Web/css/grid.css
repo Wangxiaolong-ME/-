@@ -1,8 +1,47 @@
 .main {
     margin: 0;
     width: 100%;
-    padding: 54px;
-    border: 1px solid blue;
-    background-color: dodgerblue;
-    box-sizing: content-box;
+    padding: .72rem;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    height: 11.875rem;
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 1.9375rem auto 4.0625rem;
+    align-items: center;
+    border-bottom: .125rem solid rgba(235, 235, 235, 1);
+}
+
+.left img {
+    width: 100%;
+}
+
+.middle {
+    width: 100%;
+    padding-left: 3.75rem;
+    display: grid;
+    grid-template-rows: 2.375rem 2.25rem;
+    row-gap: .3125rem;
+}
+
+.right {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.middleTop {
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+
+.middleBottom {
+    font-size: 1.10rem;
+    font-weight: 200;
+}
+
+.middle {
+    display: grid;
 }
