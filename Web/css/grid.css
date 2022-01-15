@@ -1,0 +1,8 @@
+.main {
+    margin: 0;
+    width: 100%;
+    padding: 54px;
+    border: 1px solid blue;
+    background-color: dodgerblue;
+    box-sizing: content-box;
+}
