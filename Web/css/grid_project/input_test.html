@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+        }
+        
+        .container {
+            width: 50%;
+            display: grid;
+            grid-template-columns: 30% 60% 10%;
+            grid-template-rows: 1.5625rem;
+            align-items: center;
+        }
+        
+        .container>p {
+            display: grid;
+            height: 100%;
+            justify-items: center;
+            align-items: center;
+            border: 1px solid black;
+            border-right: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            /* 上面两个圆角框属性可以简写为： */
+            /* border-radius: 5px 0 0 5px; */
+        }
+        
+        .container>input {
+            display: grid;
+            padding: 0;
+            border: 1px solid black;
+            border-right: none;
+            height: 100%;
+        }
+        
+        .container>div {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            justify-items: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .container>div>img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="margin: 0;">实现输入框布局</h3>
+    <div class="container">
+        <p>请输入位置信息</p>
+        <input type="text">
+        <div><img src="C:\Users\Administrator\Desktop\前端\Web\resource\img\list_tag.png" alt=""></div>
+    </div>
+</body>
+
+</html>
