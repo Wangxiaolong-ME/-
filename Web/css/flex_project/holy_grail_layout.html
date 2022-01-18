@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣杯布局</title>
+    <style>
+        @media (max-width:48rem) {
+            .holy {
+                margin: 0;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                flex-flow: column;
+                background-color: gray;
+                text-align: center;
+            }
+        }
+        
+        header,
+        footer {
+            text-align: center;
+            background-color: burlywood;
+            flex: 1;
+        }
+        
+        .body {
+            background-color: lightblue;
+            min-height: 50rem;
+            display: flex;
+            flex-flow: row;
+            text-align: center;
+            flex: 8;
+        }
+        
+        .left {
+            background-color: lightcoral;
+            flex: 1;
+        }
+        
+        .center {
+            background-color: lightgreen;
+            flex: 3;
+        }
+        
+        .right {
+            background-color: lightpink;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body class="holy" style="margin:0;">
+    <header>
+        <h1>头</h1>
+        <b>圣杯布局（Holy Grail Layout）指的是一种最常见的网站布局。页面从上到下，分成三个部分：头部（header），躯干（body），尾部（footer）。其中躯干又水平分成三栏，从左到右为：导航、主栏、副栏。
+        </b>
+        <a href="../../resource/img/flex/holy_grail_layout.png" style="display: block;" target="_blank">圣杯布局简略图</a>
+
+    </header>
+
+    <div class="body">
+        <div class="left">left</div>
+        <div class="center">
+            <h1>Body</h1>
+        </div>
+        <div class="right">right</div>
+    </div>
+
+    <footer>
+        <b style="font-size: 4vw;">脚</b>
+    </footer>
+</body>
+
+</html>

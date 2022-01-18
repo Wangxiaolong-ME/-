@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入框布局</title>
+    <style>
+        body {
+            margin: 0;
+            width: 800px;
+            height: 600px;
+        }
+        
+        .top {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            background-color: lightpink;
+        }
+        
+        .left,
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .bottom {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="left">
+            <p>Add-on-prepended</p>
+            <span>Amount<input type="text"></span>
+            <span>Search<input type="text"></span>
+        </div>
+        <div class="right">
+            <p>Add-on-Appended</p>
+            <span><input type="text">Go</span>
+            <span><input type="text">☆</span>
+        </div>
+    </div>
+
+    <p>Appended and Preended Add-ons</p> <br>
+    <div class="bottom">
+        <input type="text">Send
+        <input type="text">Encrypt
+
+    </div>
+
+</body>
+
+</html>
