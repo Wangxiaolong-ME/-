@@ -8,19 +8,25 @@
     <title>Document</title>
     <style>
         #div0 {
-            width: 400px;
+            width: 100%;
+            height: 600px;
         }
         
         #div0 div {
-            width: 150px;
+            /* width: 150px; */
             height: 200px;
+            float: left;
+            /* display: inline-block; */
         }
         
-        @media screen and (min-device-width: 300px) and (max-device-width: 499px) {
+        @media screen and (min-device-width: 300px) and (max-device-width: 599px) {
+            #div0 div {
+                width: 100%;
+            }
             #div0 div :nth-child(1) {
                 background-color: green;
             }
-            #div0 div :nth-child(1) {
+            #div0 div :nth-child(2) {
                 background-color: pink;
             }
             #div0 div :nth-child(3) {
@@ -28,11 +34,14 @@
             }
         }
         
-        @media screen and (min-device-width: 500px) {
+        @media screen and (min-device-width: 600px) {
+            #div0 div {
+                width: 33%;
+            }
             div :nth-child(1) {
                 background-color: green;
             }
-            div :nth-child(1) {
+            div :nth-child(2) {
                 background-color: pink;
             }
             div :nth-child(3) {
