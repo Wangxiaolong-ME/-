@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>这是一段标题</h2>
+    <h4>function Test</h4>
+
+    <button onclick="myFunction()">点击我</button>
+
+    <p id="item1"></p>
+    <p id="item2"></p>
+
+    <script>
+        /*
+                这是一段注释,不会被执行
+                */
+        function myFunction() {
+            document.getElementById("item1").innerHTML = "Hello World"
+            document.getElementById("item2").innerHTML = "Heelo Kitty"
+        }
+    </script>
+</body>
+
+</html>

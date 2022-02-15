@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "段落被更改。";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>一张网页</h1>
+    <p id="demo">一个段落</p>
+    <button type="button" onclick="myFunction()">试一试</button>
+
+    <p id="demo2"></p>
+
+    <script>
+        document.getElementById("demo2").innerHTML = 3 + 4;
+    </script>
+
+    <script>
+        document.write(5 + 6)
+    </script>
+
+    <script>
+        window.alert("一段警告!")
+    </script>
+
+    <script>
+        console.log("此处是一段console输出,需打开F12控制台查看")
+    </script>
+</body>
+
+</html>

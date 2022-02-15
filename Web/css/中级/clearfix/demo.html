@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 4px;
+            border: 4px solid lightgreen;
+        }
+        
+        .clearfix {
+            /* display: table; */
+            overflow: auto;
+        }
+        
+        p {
+            clear: right;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Clearfix</h2>
+    <p>本例中图像高于它的元素,它又被浮动了,所以他会在容器外溢出</p>
+    <div class="div1">
+        <img src="../../../resource/img/w3c.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div>
+
+    <p>为包含元素添加一个带有 overflow: auto; 的 clearfix 类,以解决此问题:</p>
+    <div class="clearfix">
+        <img src="../../../resource/img/w3c.png" alt=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div>
+
+</body>
+
+</html>
