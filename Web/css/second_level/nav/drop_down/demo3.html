@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(173, 216, 230);
+        }
+        
+        img {
+            width: 200px;
+            height: 150px;
+        }
+        /* 下拉框属性 */
+        
+        .dropdown {
+            float: left;
+            position: sticky;
+        }
+        /* 右边下拉框属性 */
+        
+        .dropdown-right {
+            position: sticky;
+            float: right;
+        }
+        /* 下拉框内容属性:隐藏,居中,阴影,内边距,背景色,定位(正常文档流) */
+        
+        .dropdown-content {
+            display: none;
+            text-align: center;
+            width: 400px;
+            height: 300px;
+            box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            background-color: #fff;
+            position: absolute;
+        }
+        /* 左对齐 */
+        
+        .dropdown .dropdown-content {
+            left: 0;
+        }
+        /* 右对齐 */
+        
+        .dropdown-right .dropdown-content {
+            right: 0;
+        }
+        /* 下拉框内容 长宽属性 */
+        
+        .dropdown-content img {
+            height: 85%;
+            width: 95%;
+        }
+        /* 鼠标悬浮 内容可见 */
+        
+        .dropdown:hover .dropdown-content,
+        .dropdown-right:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="left: 35%; position: absolute;">左边下拉框左对齐,右边下拉框右对齐</p>
+    <div class="dropdown">
+        <img src="../../../../resource/img/dog.png" alt="">
+        <div class="dropdown-content">
+            <img src="../../../../resource/img/dog.png" alt="">
+            <h3>Dog</h3>
+        </div>
+    </div>
+    <div class="dropdown-right">
+        <img src="../../../../resource/img/w3c.png" alt="">
+        <div class="dropdown-content">
+            <img src="../../../../resource/img/w3c.png" alt="">
+            <h3>W3C</h3>
+        </div>
+    </div>
+</body>
+
+</html>

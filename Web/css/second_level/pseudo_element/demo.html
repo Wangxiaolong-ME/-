@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            color: blue;
+        }
+        
+        div::first-letter {
+            font-size: x-large;
+            color: red;
+        }
+        
+        .merge::first-line {
+            color: green;
+        }
+        
+        .merge::first-letter {
+            color: purple;
+            font-size: x-large;
+        }
+        
+        .select::selection {
+            color: red;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <p>这是一个p元素,使用了::first-line伪元素 这是一段很长 很长很长 很长很长 很长很长 很很长很长 很长很长 很很长很长 很长很长 很很长很长 很长很长 很很长很长 很长很长 很长很长 很长很长 很长很长 很长很长 很长 的文字</p>
+    <div>这是一个div,使用了::first-letter伪元素</div>
+
+    <div class="merge">
+        两者结合使用
+    </div>
+
+    <h2 class="select">
+        选中这部分文本查看效果
+    </h2>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        重点:
+            ul
+                overflow:hidden
+                position:sticky
+        */
+        
+        body {
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
+        }
+        
+        header {
+            background-color: lightgray;
+            padding: 50px 0;
+        }
+        
+        h1,
+        h2 {
+            margin: 0;
+        }
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            padding: 20px 15px;
+        }
+        
+        li a:hover {
+            background-color: gray;
+        }
+        
+        .activity {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>向下滚动</h1>
+        <h2>请向下滚动页面,来查看粘性导航栏效果。</h2>
+    </header>
+    <ul>
+        <li><a href="" class="activity">Home</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <div class="content">
+        <h1>粘性导航实例</h1>
+        <h2>导航栏滚动到顶部时,它将停留在顶部。</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>Some text to enable scrolling..</h2>
+        <h2>End ...</h2>
+    </div>
+</body>
+
+</html>

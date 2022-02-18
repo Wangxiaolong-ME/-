@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #fff;
+            display: flex;
+        }
+        
+        .container div {
+            display: inline-block;
+            background-color: darkturquoise;
+            padding: 50px;
+        }
+        
+        .container2 {
+            background-color: #fff;
+            display: flex;
+        }
+        
+        .container2 div {
+            display: inline-block;
+            background-color: rgba(0, 206, 209);
+            padding: 50px;
+        }
+        
+        .container div:nth-child(2) {
+            opacity: 0.8;
+        }
+        
+        .container div:nth-child(3) {
+            opacity: 0.5;
+        }
+        
+        .container div:nth-child(4) {
+            opacity: 0.3;
+        }
+        /* .container2 .third {
+            background-color: rgba(0, 206, 209, 0.3);
+        } */
+        
+        h3 p {
+            color: red;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>使用
+        <p>opacity</p> 属性为元素的背景添加透明度时，其所有子元素都继承相同的透明度
+    </h3>
+    <div class="container">
+        <div>opacity</div>
+        <div>opacity</div>
+        <div>opacity</div>
+        <div>opacity</div>
+    </div>
+
+    <h3>不希望对子元素应用不透明度，使用 RGBA 颜色值。</h3>
+    <div class="container2">
+        <div>opacity</div>
+        <div style="background-color: rgba(0, 206, 209, 0.8);">opacity</div>
+        <div style="background-color: rgba(0, 206, 209, 0.5);">opacity</div>
+        <div style="background-color: rgba(0, 206, 209, 0.2);">opacity</div>
+    </div>
+</body>
+
+</html>

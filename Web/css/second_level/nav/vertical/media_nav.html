@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 600px) {
+            ul li,
+            ul #end {
+                float: none;
+            }
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        ul {
+            text-align: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: slategrey;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            padding: 20px 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: black;
+        }
+        
+        #end {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+        <li id="end"><a href="">Aobout</a></li>
+
+    </ul>
+
+    <h1>响应式顶部导航栏实例</h1>
+    <h2>此示例使用媒体查询在屏幕宽度小于或等于 600 像素时垂直堆叠 topnav。
+
+    </h2>
+    <p>请调整浏览器窗口的大小以查看效果。</p>
+</body>
+
+</html>

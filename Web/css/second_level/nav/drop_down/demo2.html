@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            background-color: lightblue;
+        }
+        
+        li a:hover {
+            background-color: gray;
+        }
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            width: 60px;
+        }
+        
+        .dropdown-content {
+            width: 60px;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        .dropdown-content a {
+            background-color: lightgray;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>移动到Home,展示下拉菜单</h3>
+    <ul>
+        <li class="dropdown">
+            <a href="">Home</a>
+            <div class="dropdown-content">
+                <a href="">link1</a>
+                <a href="">link2</a>
+                <a href="">link3</a>
+            </div>
+        </li>
+
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Aobout</a></li>
+
+    </ul>
+</body>
+
+</html>
